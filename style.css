@@ -1,0 +1,208 @@
+.title {
+    font-family: "Schoolbell", cursive;
+    font-size: 100px;
+    line-height: 1;
+    color: #ffffff;
+    margin: 20px 0 25px;
+    text-shadow: 0.02em 0.02em 0.02em #2bf303, -0.02em -0.02em 0.02em #7ffa67, 0 0 0.2em #7ffa67;
+    animation: textShadow 2s linear infinite alternate;
+  }
+  .title span {
+    font-size: 50px;
+    margin: 0 -12px;
+    vertical-align: middle;
+  }
+  .title-link {
+    text-decoration: none;
+    text-transform: none;
+    color: #000000;
+  }
+  .title-link:hover {
+    color: #02b1c8;
+  }
+  
+  body {
+
+    background-repeat: repeat;
+    background-size: contain;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .card {
+    border: none;
+    background-color: rgba(127, 250, 103, 0);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 1.2rem;
+    background-color: rgba(2, 200, 18, 0.2);
+  }
+  
+  .card-body {
+    background-color: rgba(18, 200, 2, 0.192);
+  }
+  
+  .back .card :not(.card-title-back, .card-location, .card-gender, .card-status, .card-origin) {
+    opacity: 0.15;
+  }
+  
+  .back .card .card-title-back {
+    position: absolute;
+    bottom: 85%;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  .card-gender {
+    position: absolute;
+    bottom: 65%;
+    font-size: 1rem;
+  }
+  
+  .card-origin {
+    position: absolute;
+    bottom: 45%;
+    font-size: 1rem;
+    text-align: start;
+  }
+  
+  .card-status {
+    position: absolute;
+    bottom: 25%;
+    font-size: 1rem;
+  }
+  
+  .card-location {
+    position: absolute;
+    bottom: 5%;
+    font-size: 1rem;
+    text-align: start;
+  }
+  
+  #floatingInput {
+    background-color: rgba(255, 255, 255, 0.329);
+    color: #02c812;
+    font-weight: 500;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 9px #19c802 inset;
+  }
+  
+  .search {
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+  }
+  
+  .btn-buscar {
+    background-color: rgba(255, 249, 249, 0.329);
+    border-radius: 2rem;
+    padding: 0.4rem 1rem;
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    font-weight: 400;
+    border: none;
+    box-shadow: 0px 0px 9px #00dd00 inset;
+  }
+  .btn-buscar:hover {
+    background-color: rgba(35, 200, 2, 0.706);
+    box-shadow: none;
+  }
+  
+  .page-link {
+    background-color: rgba(0, 0, 0, 0.329);
+    color: whitesmoke;
+    border: none;
+    box-shadow: 0px 0px 5px #02c81c inset;
+    padding: 0.5rem 0.8rem;
+    font-size: 1rem;
+  }
+  .page-link:hover {
+    background-color: #12c802;
+    color: whitesmoke;
+  }
+  
+  .card-flip {
+    perspective: 1000px;
+  }
+  .card-flip:hover .flip, .card-flip.hover .flip {
+    transform: rotateY(180deg);
+  }
+  
+  .card-flip,
+  .front,
+  .back {
+    width: 100%;
+    height: 400px;
+  }
+  
+  .flip {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+  }
+  
+  .front,
+  .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .front {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  
+  .back {
+    transform: rotateY(180deg);
+  }
+  
+  @media (max-width: 1400px) {
+    .card-flip,
+  .front,
+  .back {
+      width: 100%;
+      height: 400px;
+    }
+  }
+  @media (max-width: 992px) {
+    .card-flip,
+  .front,
+  .back {
+      width: 100%;
+      height: 380px;
+    }
+  }
+  @media (max-width: 768px) {
+    .card-flip,
+  .front,
+  .back {
+      width: 100%;
+      height: 330px;
+    }
+  }
+  @media (max-width: 480px) {
+    .card-flip,
+  .front,
+  .back {
+      width: 100%;
+      height: 300px;
+    }
+    .back .card .card-title-back {
+      bottom: 80%;
+    }
+    .card-gender {
+      bottom: 68%;
+    }
+    .card-origin {
+      bottom: 35%;
+    }
+    .card-status {
+      bottom: 25%;
+    }
+    .card-location {
+      bottom: -5%;
+    }
+  }
